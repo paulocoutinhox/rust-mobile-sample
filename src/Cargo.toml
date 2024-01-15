@@ -1,0 +1,9 @@
+[package]
+name = "your_project"
+version = "1.0.0"
+
+[lib]
+path = "lib.rs"
+crate-type = ["staticlib", "cdylib"]
+
+[dependencies]
