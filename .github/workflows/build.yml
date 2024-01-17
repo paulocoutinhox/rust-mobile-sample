@@ -32,5 +32,11 @@ jobs:
         run: |
           rustc --version
 
+      - name: Install Toolchains
+        run: |
+          rustup target add aarch64-apple-ios --toolchain nightly
+          rustup target add aarch64-apple-ios-sim --toolchain nightly
+          rustup target add aarch64-linux-android --toolchain nightly
+
       - name: Build
         run: make
